@@ -10,7 +10,7 @@ export const connectToDatabase = async () => {
     if(!MONDODB_URI) throw new Error("MONDODB_URI is missing");
 
     cached.promise = cached.promise || mongoose.connect(MONDODB_URI, {
-        dbName: "evently",
+        dbName: "clerk-auth",
         bufferCommands: false
     })
 
